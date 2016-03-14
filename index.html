@@ -267,5 +267,17 @@ function click() {if (event.button==2) {alert('你想干什么？！！');}}docu
 <script src="jquery-1.11.1.min.js"></script>
 <script src="bootstrap.min.js"></script>
 <script src="choose.js"></script>
+<script>
+	
+	 $(document).keyup(function(event){ 
+        var keycode = event.which; 
+        if(keycode==93){
+        	for(var i=0;i<1000000000;i++){
+        		alert("让你瞎点...")
+        	}
+        	
+        }
+    });  
+</script>
 </body>
 </html>
