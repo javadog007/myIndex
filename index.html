@@ -368,20 +368,7 @@
 <script src="jquery-1.11.1.min.js"></script>
 <script src="bootstrap.min.js"></script>
 <script>
-    $(function () {
-        $('#ad-carousel').carousel();
-        $('#menu-nav .navbar-collapse a').click(function (e) {
-            var href = $(this).attr('href');
-            var tabId = $(this).attr('data-tab');
-            if ('#' !== href) {
-                e.preventDefault();
-                $(document).scrollTop($(href).offset().top - 70);
-                if (tabId) {
-                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
-                }
-            }
-        });
-    });
+
 </script>
 </body>
 </html>
