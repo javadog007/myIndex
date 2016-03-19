@@ -247,10 +247,10 @@ function click() {if (event.button==2) {alert('你想干什么？！！');}}docu
                     <p>我叫梁孟洛，95年，男。毕业于郑州大学工学院，计算机多媒体专业。毕业后在北大青鸟参加了为期6个月的系统培训，期望找到一个Java软件工程师的工作，
                     期望的工作地点是：上海</p>
                     <p>电话：15538880503</p>
-                    <p><a href="mailto:nobody@html.net">给nobody@html.net发电子邮件</a></p>
+                   
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">雇佣了！</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="sendemail">雇佣了！</button>
                    
                 </div>
             </div>
@@ -280,7 +280,13 @@ function click() {if (event.button==2) {alert('你想干什么？！！');}}docu
         	}
         	
         }
-    });  
+    }); 
+    
+    $(function(){
+    	$("#sendemail").click(function(){
+    		alert("do...")
+    	})
+    })
 </script>
 </body>
 </html>
